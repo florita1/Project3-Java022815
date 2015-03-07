@@ -53,6 +53,11 @@ Each game should follow the same process. Games will progress as follows:
 8. **Winner takes the pot.** The player with the highest "value" of hand has the value of the pot added to their wallet. In case of a tie, the pot is split between two players.
 9. **Repeat steps 1-8.** Continue to repeat steps 1-7 until a player's wallet reaches 0. If the zeroed-out player is a computer, eliminate that player from the game for all subsequent rounds. If that player is the human-controlled player, end the game and inform the player that they lose and are the worst. If all computer-controlled players deplete their wallets before the human-controlled player loses theirs, end the game and inform the player that they have won the game and are the best.
 
+-------------
+
+#### End the game and repeat.
+
+Return the user to the first menu, prompting the user to restart the game with new parameters or exit.
 
 
 
