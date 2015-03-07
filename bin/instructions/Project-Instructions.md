@@ -36,6 +36,7 @@ The application should default to a five-card draw format with "antes" instead o
 "Number of Players" will define the number of computer-generated players for each game, including the human player inputting values through the console.
 "Ante size" will define the value of the ante that must be paid before each round. The ante is a forced bet made by every player before cards are dealt. This encourages participation in hands and ensures that every game eventually has an end-point, even if players fold (or quit) every hand without participating in the round of betting.
 "Wallet size" will define the total amount of cash that players have at any moment. This value will change every hand, as antes are deducted before hands are dealt, and winnings or losses are added to or subtracted from the wallet after every betting round.
+
 -------------
 
 #### After players input all parameters, the game should begin.
