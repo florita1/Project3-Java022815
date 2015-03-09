@@ -64,13 +64,16 @@ After a game has completed, make sure that you return the user to the first menu
 
 #### Testing with JUnit.
 
-Now that you've build your application, it's up time to test the project using scripts and JUnit. Your test suite must include the following:
+Now that you've built your application, it's up time to test the project using scripts and JUnit. Your test suite must include the following:
 
-1. **A Setup Method for adding a player name.**
-2. **A JUnit test script for each methods and class.**
-3. **A generalized test suite for running all test cases together.**
+1. **Create a folder named `FirstnameLastname` (with your First Name and Last Name, of course), in the `com.junit` directory.**
+2. **A Setup Method for adding a player name.**
+3. **A JUnit test script for each methods and class.**
+4. **A generalized test suite for running all test cases together.**
 
-**Save your `.java` files for your test suite in the `.answers` directory in your `FirstnameLastname` folder. Please label the file as `testsuite`.**
+Be sure that you've followed JUnit and unit testing naming conventions throughout!
+
+**Save your `.java` files for your test suite in your `FirstnameLastname` folder in the `com.junit` directory. Please label the file as `testsuite`.**
 
 
 
