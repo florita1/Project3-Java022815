@@ -57,7 +57,22 @@ Each game should follow the same process. Games will progress as follows:
 
 #### End the game and repeat.
 
-Return the user to the first menu, prompting the user to restart the game with new parameters or exit.
+After a game has completed, make sure that you return the user to the first menu, prompting the user to restart the game with new parameters or exit.
+
+
+-------------
+
+#### Testing with JUnit.
+
+Now that you've build your application, it's up time to test the project using scripts and JUnit. Your test suite must include the following:
+
+1. **A Setup Method for adding a player name.**
+2. **A JUnit test script for each methods and class.**
+3. **A generalized test suite for running all test cases together.**
+
+**Save your `.java` files for your test suite in the `.answers` directory in your `FirstnameLastname` folder. Please label the file as `testsuite`.**
+
+
 
 
 
