@@ -7,8 +7,8 @@ import java.util.TreeMap;
 
 public class HighestHand {
 
-	boolean winner1 = false;
 	private int rank;
+	private String winner;
 	private List<String> winners;
 	private LinkedHashMap<String, String[]> playerCards;
 	private LinkedHashMap<String, Integer> cardValues = null;
@@ -20,6 +20,10 @@ public class HighestHand {
 		playerCards = setPlayerCards;
 		rank = setRank;
 		chooseWinner();
+	}
+	
+	public String getWinner() {
+		return winner;
 	}
 
 	public int getHighCard(String[] testHand) {
@@ -46,7 +50,7 @@ public class HighestHand {
 		return handVal;
 	}
 
-	public void chooseWinner() {
+	public String chooseWinner() {
 		TreeMap<Integer, String> winnerMap = new TreeMap<Integer, String>();
 
 		if (rank == 0) {
@@ -65,6 +69,8 @@ public class HighestHand {
 			}
 		}
 		System.out.println(winnerMap.get(winnerMap.lastKey()) + " wins!");
+		winner = winnerMap.get(winnerMap.lastKey());
+		return winner;
 	}
 
 	public LinkedHashMap<String, Integer> getCardValues() {

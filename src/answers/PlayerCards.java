@@ -15,8 +15,8 @@ public class PlayerCards {
 			String setPlayerName) throws IOException {
 		numOfPlayers = setNumOfPlayers;
 		playerName = setPlayerName;
-		playerNames = new String[] { playerName, "player2", "player3",
-				"player4", "player5" };
+		playerNames = new String[] { playerName, "Player 2", "Player 3",
+				"Player 4", "Player 5" };
 		cards = setCards;
 		makePlayers();
 

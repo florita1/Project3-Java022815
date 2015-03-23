@@ -47,13 +47,16 @@ public class CheckRanks {
 
 	}
 
-	public void checkOneWinner() {
-		winner = sortedRanks.get(sortedRanks.lastKey());
+	public String checkOneWinner() {
+		this.winner = sortedRanks.get(sortedRanks.lastKey());
 		System.out.println(winner + " Wins!");
+		return winner;
 	}
 
-	public void checkMultiWinner() {
-		new HighestHand(tiedWinners, sortedRanks.lastKey(), playerCards);
+	public String checkMultiWinner() {
+		HighestHand win = new HighestHand(tiedWinners, sortedRanks.lastKey(), playerCards);
+		winner = win.getWinner();
+		return winner;
 	}
 
 }

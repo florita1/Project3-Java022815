@@ -5,6 +5,17 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 public class PlayGame {
+	
+	private LinkedHashMap<String, String[]> playerCards;
+	private String winner;
+
+	public LinkedHashMap<String, String[]> getPlayerCards() {
+		return playerCards;
+	}
+
+	public String getWinner() {
+		return winner;
+	}
 
 	public PlayGame(int setPlayerNum, String setPlayerName) {
 
@@ -18,16 +29,17 @@ public class PlayGame {
 					setPlayerName);
 
 			HashMap<String, Integer> ranks = new HashMap<String, Integer>();
-			LinkedHashMap<String, String[]> playerforGame = cards.getData();
-			for (String player : playerforGame.keySet()) {
+			playerCards = cards.getData();
+			for (String player : playerCards.keySet()) {
 
-				tempHand = new PlayersHand(playerforGame.get(player));
+				tempHand = new PlayersHand(playerCards.get(player));
 				tempWin = new PokerHand(tempHand);
 				ranks.put(player, tempWin.getRank());
 			}
 
 			System.out.println(ranks.values());
-			new CheckRanks(ranks, playerforGame);
+			CheckRanks winners = new CheckRanks(ranks, playerCards);
+			 this.winner = winners.getWinner();
 
 		} catch (IOException e) {
 			e.printStackTrace();
