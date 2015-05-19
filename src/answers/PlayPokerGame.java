@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
-public class PlayGame {
+public class PlayPokerGame {
 	
 	private LinkedHashMap<String, String[]> playerCards;
 	private String winner;
@@ -17,7 +17,7 @@ public class PlayGame {
 		return winner;
 	}
 
-	public PlayGame(int setPlayerNum, String setPlayerName) {
+	public PlayPokerGame(int setPlayerNum, String setPlayerName) {
 
 		try {
 			PlayerCards cards = null;
